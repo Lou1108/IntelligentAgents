@@ -31,12 +31,76 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasChild">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasParent"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasOccupation -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasOccupation">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Occupation"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasParent">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasSibling -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasSibling">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasTrait -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasTrait">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isFriendOf -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isFriendOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isMarriedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isMarriedTo">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
     </owl:ObjectProperty>
     
 
@@ -121,11 +185,58 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HasWeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HasWeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome">
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Occupation"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasGender -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasGender">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHeight">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
@@ -186,6 +297,37 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adventurous -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adventurous">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
@@ -236,6 +378,35 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Carpenter">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#TechnicalWorker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Child -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Child">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18</xsd:maxExclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -344,6 +515,29 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Elder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Elder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">67</xsd:minInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Electrician -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Electrician">
@@ -444,6 +638,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Friendly -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Friendly">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Gas -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Gas">
@@ -456,6 +658,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GastronomyWorker">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ServiceWorker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GoodHearted -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GoodHearted">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
     </owl:Class>
     
 
@@ -666,7 +876,29 @@
 
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasParent"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasAge"/>
+                <owl:someValuesFrom>
+                    <rdfs:Datatype>
+                        <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                        <owl:withRestrictions rdf:parseType="Collection">
+                            <rdf:Description>
+                                <xsd:maxInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">110</xsd:maxInclusive>
+                            </rdf:Description>
+                        </owl:withRestrictions>
+                    </rdfs:Datatype>
+                </owl:someValuesFrom>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
     
 
 
@@ -697,6 +929,14 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Product -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Product"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reserved -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reserved">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    </owl:Class>
     
 
 
