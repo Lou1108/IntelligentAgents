@@ -406,6 +406,14 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Pain"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Actor -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Actor">
@@ -499,6 +507,42 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalHairAllergies">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalAllergies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#cannotTouch"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Itching"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Sneezing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenTongue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -506,6 +550,14 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Anxiety -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Anxiety">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disorder"/>
+    </owl:Class>
     
 
 
@@ -529,6 +581,32 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Artwork">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Documents"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Asthma -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Asthma">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HealthCondition"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Coughing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ShortnessOfBreath"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -573,6 +651,42 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Bloating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Bloating">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BreastCancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BreastCancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WeightLoss"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Carpenter -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Carpenter">
@@ -581,10 +695,24 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CatAllergy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CatAllergy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalHairAllergies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#cannotTouch"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -592,6 +720,14 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ChestPain -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ChestPain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Pain"/>
+    </owl:Class>
     
 
 
@@ -644,11 +780,39 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ColonCancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ColonCancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diarrhea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Computer -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Computer">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#OfficeTool"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Printer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Constipation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Constipation">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
     </owl:Class>
     
 
@@ -701,6 +865,22 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diabetes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diabetes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diarrhea -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diarrhea">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease">
@@ -743,10 +923,26 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DogAllergy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DogAllergy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalHairAllergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DownSyndrome -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DownSyndrome">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Syndrome"/>
     </owl:Class>
     
 
@@ -772,6 +968,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Driver">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ServiceWorker"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DustMites -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DustMites">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AirborneAllergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#EatingDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#EatingDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disorder"/>
     </owl:Class>
     
 
@@ -875,6 +1087,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Farmland">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
     </owl:Class>
     
 
@@ -1023,6 +1243,32 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HayFever -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HayFever">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AirborneAllergies"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Coughing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Sneezing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Headache -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Headache">
@@ -1070,10 +1316,50 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#IBS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#IBS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Syndrome"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Bloating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Constipation"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diarrhea"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#InsectAllergy -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#InsectAllergy">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalAllergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Itching -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Itching">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinSymptoms"/>
     </owl:Class>
     
 
@@ -1118,6 +1404,46 @@
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#locatedIn"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Leukemia -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Leukemia">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#LungCancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#LungCancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ChestPain"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Coughing"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#comesWithSymptom"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ShortnessOfBreath"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -1422,6 +1748,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ProstateCancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ProstateCancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ProteinDeficiency -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ProteinDeficiency">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HealthCondition"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Rash -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Rash">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinSymptoms"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reserved -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reserved">
@@ -1502,10 +1852,34 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ShortnessOfBreath -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ShortnessOfBreath">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinAllergies -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinAllergies">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Allergies"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinCancer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinCancer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cancer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinSymptoms -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinSymptoms">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
     </owl:Class>
     
 
@@ -1526,14 +1900,6 @@
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#StomacheAche -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#StomacheAche">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Pain"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Studio -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Studio">
@@ -1546,6 +1912,22 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Sun">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NaturalResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenTongue -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenTongue">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
     </owl:Class>
     
 
@@ -1690,6 +2072,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Water">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MaterialResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WeightLoss -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WeightLoss">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
     </owl:Class>
     
 
