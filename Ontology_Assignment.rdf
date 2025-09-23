@@ -998,7 +998,6 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Beef -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Beef">
-        <owl:equivalentClass rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Chicken"/>
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased"/>
         <rdfs:subClassOf>
             <owl:Restriction>
