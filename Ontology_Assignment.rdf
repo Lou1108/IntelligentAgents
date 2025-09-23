@@ -829,6 +829,7 @@
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
     </owl:Class>
     
 
@@ -1999,7 +2000,7 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Lactose -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Lactose">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasMacro"/>
@@ -2494,10 +2495,30 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaMargherita -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaMargherita">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPolo -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPolo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
@@ -2974,6 +2995,21 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VeterinaryVisit -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VeterinaryVisit">
@@ -3089,6 +3125,14 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Wheat">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MaterialResource"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
     </owl:Class>
     
 
