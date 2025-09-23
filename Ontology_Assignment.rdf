@@ -167,6 +167,17 @@
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHealthCondition -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHealthCondition"/>
@@ -819,6 +830,7 @@
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
     </owl:Class>
     
 
@@ -2491,6 +2503,12 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese"/>
             </owl:Restriction>
@@ -2881,6 +2899,12 @@
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables"/>
         <rdfs:subClassOf>
             <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VitaminC"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasMicro"/>
                 <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VitaminC"/>
             </owl:Restriction>
@@ -3172,6 +3196,14 @@
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Beef"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Chicken"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Lactose"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Birth"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Death"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Marriage"/>
@@ -3254,6 +3286,16 @@
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Water"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Wheat"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Wood"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fruits"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Nuts"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tofu"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
