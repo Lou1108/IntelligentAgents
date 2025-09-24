@@ -95,6 +95,7 @@
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#famousForFood -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#famousForFood">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
     </owl:ObjectProperty>
@@ -187,7 +188,7 @@
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <owl:inverseOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isIngredientOf"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#SymmetricProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
     </owl:ObjectProperty>
@@ -216,6 +217,13 @@
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasMicro">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasMicro"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
