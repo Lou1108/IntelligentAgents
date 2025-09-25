@@ -2,6 +2,7 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="Imports Wizard Entry" name="http://example.org/food" uri="file:/C:/Users/Owen/Documents/ia/food_ontology_test.rdf"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1758387545439" name="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8/" uri="Ontology_Assignment.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1758484539987" name="duplicate:http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8/" uri="Ontology_Assignment.rdf"/>
+        <uri id="Automatically generated entry, Timestamp=1758484539987" name="duplicate:http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8/" uri="owen_attempt.rdf"/>
     </group>
 </catalog>
