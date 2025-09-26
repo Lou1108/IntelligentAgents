@@ -778,6 +778,22 @@ Morris Splint:</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#BakingIngredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#BakingIngredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ingredients -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ingredients">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#KitchenTool"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adoption -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adoption">
@@ -2363,6 +2379,12 @@ Morris Splint:</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Baker">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ManualWorker"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#requiresTool"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#BakingIngredients"/>
+            </owl:Restriction>
+        </rdf:type>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#requiresTool"/>
