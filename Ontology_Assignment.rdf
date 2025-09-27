@@ -468,6 +468,10 @@ Morris Splint:</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
+        <owl:propertyChainAxiom rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#worksAt"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#locatedIn"/>
+        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -790,6 +794,20 @@ Morris Splint:</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ingredients">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#KitchenTool"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -2250,6 +2268,20 @@ Morris Splint:</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Restaurant"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#locatedIn"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Florance"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AbdominalPain">
@@ -2827,6 +2859,12 @@ Morris Splint:</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Florance">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WalkableCity"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#locatedIn"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Italy"/>
+            </owl:Restriction>
+        </rdf:type>
         <untitled-ontology-8:hasLandmark rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DuomoDiFirenze"/>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Italy"/>
     </owl:NamedIndividual>
@@ -2949,7 +2987,7 @@ Morris Splint:</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#John">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
         <untitled-ontology-8:isMarriedTo rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Amira"/>
-        <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">34</untitled-ontology-8:hasAge>
+        <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">34</untitled-ontology-8:hasAge>
     </owl:NamedIndividual>
     
 
@@ -2975,6 +3013,7 @@ Morris Splint:</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Leo">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
         <untitled-ontology-8:hasJob rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Waiter"/>
+        <untitled-ontology-8:worksAt rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
         <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</untitled-ontology-8:hasAge>
     </owl:NamedIndividual>
     
@@ -3379,7 +3418,7 @@ Morris Splint:</rdfs:comment>
         <rdf:type>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#worksAt"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Restaurant"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
             </owl:Restriction>
         </rdf:type>
     </owl:NamedIndividual>
