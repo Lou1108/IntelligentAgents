@@ -6,6 +6,7 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Ontology_Assignment="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#"
      xmlns:untitled-ontology-8="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment">
         <rdfs:comment>Iza Boer: 6714943
@@ -24,6 +25,50 @@ Morris Splint: 1050877</rdfs:comment>
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#MakesSound -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#MakesSound">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NoiseLevel"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#impliesBehaviour -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#impliesBehaviour">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#isAvailableAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#isAvailableAt">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
+    </owl:ObjectProperty>
     
 
 
@@ -283,7 +328,7 @@ Morris Splint: 1050877</rdfs:comment>
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasOwner">
         <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasRelation"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DomasticatedAnimals"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
     </owl:ObjectProperty>
     
@@ -792,10 +837,145 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Alligator -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Alligator">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WildAnimals"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#AnimalSounds -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#AnimalSounds"/>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#BakingIngredients -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#BakingIngredients">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ingredients"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#ButterChicken -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#ButterChicken">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RiceDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Chicken"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Cat -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Cat">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DomasticatedAnimals"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#MakesSound"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Meow"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#ChickenTikkaMasala -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#ChickenTikkaMasala">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RiceDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Chicken"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Dog -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Dog">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DomasticatedAnimals"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#MakesSound"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Woof"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DomasticatedAnimals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DomasticatedAnimals">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasOwner"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WildAnimals"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#EatingDisorder -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#EatingDisorder">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disorder"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Forest -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Forest">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Terrain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quiet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Horse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Horse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
     </owl:Class>
     
 
@@ -808,16 +988,272 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca -->
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LargeCity -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LargeCity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasPopulation"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:minInclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</xsd:minInclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Noisy"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#SmallCity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NoiseLevel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NoiseLevel"/>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Paella -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Paella">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RiceDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Shrimps"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaBolognese -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaBolognese">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Beef"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tomato"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaCarbonara -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaCarbonara">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaDish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Egg"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pork"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PastaDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pasta"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PanFry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaDough"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#OvenBake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaBianca">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RiceDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RiceDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                        <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Rice"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#OvenBake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#SmallCity -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#SmallCity">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasPopulation"/>
+                        <owl:someValuesFrom>
+                            <rdfs:Datatype>
+                                <owl:onDatatype rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+                                <owl:withRestrictions rdf:parseType="Collection">
+                                    <rdf:Description>
+                                        <xsd:maxExclusive rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500000</xsd:maxExclusive>
+                                    </rdf:Description>
+                                </owl:withRestrictions>
+                            </rdfs:Datatype>
+                        </owl:someValuesFrom>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#City"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Snake -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Snake">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Turtle"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Turtle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Turtle">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WildAnimals -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WildAnimals">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
+                    <owl:Class>
+                        <owl:complementOf>
+                            <owl:Restriction>
+                                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasOwner"/>
+                                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+                            </owl:Restriction>
+                        </owl:complementOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Animals"/>
     </owl:Class>
     
 
@@ -920,9 +1356,9 @@ Morris Splint: 1050877</rdfs:comment>
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Ingredient"/>
         <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VegetarianDish"/>
     </owl:Class>
     
 
@@ -975,6 +1411,7 @@ Morris Splint: 1050877</rdfs:comment>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes"/>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#InsectAllergy"/>
     </owl:Class>
     
 
@@ -1152,9 +1589,9 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes -->
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes">
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
     </owl:Class>
     
@@ -1190,6 +1627,13 @@ Morris Splint: 1050877</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#affectsHealthCondition"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Obesity"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WalkableCity"/>
     </owl:Class>
     
 
@@ -1360,14 +1804,6 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Forest -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Forest">
@@ -1380,6 +1816,12 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fruits">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1472,6 +1914,14 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Illness">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HealthEvent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Ingredient -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Ingredient">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Food"/>
     </owl:Class>
     
 
@@ -1716,6 +2166,12 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MountainousTerrain">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Terrain"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quiet"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1728,10 +2184,30 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NonVegetarianDish -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NonVegetarianDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                        <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalBased"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VegetarianDish"/>
+    </owl:Class>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodType"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Ingredient"/>
     </owl:Class>
     
 
@@ -1762,6 +2238,18 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Nuts">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DeepFry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
@@ -1858,7 +2346,7 @@ Morris Splint: 1050877</rdfs:comment>
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaMargherita -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaMargherita">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian"/>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
@@ -1875,10 +2363,10 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPolo -->
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPollo -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPolo">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PizzaPollo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
@@ -1930,6 +2418,7 @@ Morris Splint: 1050877</rdfs:comment>
                 </owl:someValuesFrom>
             </owl:Restriction>
         </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VitaminDeficiency"/>
     </owl:Class>
     
 
@@ -2080,14 +2569,8 @@ Morris Splint: 1050877</rdfs:comment>
 
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Terrain -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Terrain"/>
-    
-
-
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tofu -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tofu">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Terrain">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
     </owl:Class>
     
 
@@ -2120,21 +2603,49 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables">
         <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DeepFry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PanFry"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian -->
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VegetarianDish -->
 
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetarian">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasFoodNutrient"/>
-                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
-        <owl:disjointWith rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat"/>
+    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VegetarianDish">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIngredient"/>
+                        <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dish"/>
     </owl:Class>
     
 
@@ -2204,14 +2715,6 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat -->
-
-    <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WithMeat">
-        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dishes"/>
-    </owl:Class>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Wood -->
 
     <owl:Class rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Wood">
@@ -2259,10 +2762,97 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Active -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Active">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Amelie -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Amelie">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Child"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Anorexia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Anorexia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#EatingDisorder"/>
+        <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WeightLoss"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Barcelona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Barcelona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WalkableCity"/>
+        <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Spain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Carbohydrate -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Carbohydrate">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Macro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DeepFry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#DeepFry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Denver -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Denver">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DrivableCity"/>
+        <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#USA"/>
+        <untitled-ontology-8:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">730000</untitled-ontology-8:hasPopulation>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ecuador -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ecuador">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Egg -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Egg">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PanFry"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Emily -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Emily">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
+        <untitled-ontology-8:hasChild rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Michael"/>
     </owl:NamedIndividual>
     
 
@@ -2275,10 +2865,195 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesMeetingPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesMeetingPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople"/>
+        <Ontology_Assignment:impliesBehaviour rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LovesExercise"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesTalking -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesTalking">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Jason -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Jason">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
+        <untitled-ontology-8:hasChild rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Amelie"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LaVirgenDelPanecillo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LaVirgenDelPanecillo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
+        <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quito"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LovesExercise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LovesExercise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Behaviour"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Melt -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Melt">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Meow -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Meow">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#AnimalSounds"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Michael -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Michael">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Child"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Noisy -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Noisy">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NoiseLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NonSocial -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NonSocial">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Social"/>
+        <Ontology_Assignment:impliesBehaviour rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesMeetingPeople"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Obesity -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Obesity">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#EatingDisorder"/>
+        <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WeightGain"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#OvenBake -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#OvenBake">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PanFry -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PanFry">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pasta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pasta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaDough -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#PizzaDough">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pork -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pork">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MeatFood"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Potato -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Potato">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables"/>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Protein -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Protein">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Macro"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quiet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quiet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#NoiseLevel"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DrivableCity"/>
+        <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ecuador"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#CookingStyles"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RedRocksAmphitheatre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#RedRocksAmphitheatre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
+        <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Denver"/>
     </owl:NamedIndividual>
     
 
@@ -2293,6 +3068,72 @@ Morris Splint: 1050877</rdfs:comment>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Florance"/>
             </owl:Restriction>
         </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Rice -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Rice">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Boil"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Sally -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Sally">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Alligator"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Social -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Social">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+        <Ontology_Assignment:impliesBehaviour rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Spain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Spain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Tofu -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Tofu">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#NotAnimalBased"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#USA -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#USA">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Country"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WeightGain -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#WeightGain">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Woof -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Woof">
+        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#AnimalSounds"/>
     </owl:NamedIndividual>
     
 
@@ -2396,6 +3237,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Asthma">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HealthCondition"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ProteinDeficiency"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ChestPain"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Coughing"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue"/>
@@ -2461,6 +3303,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BeeAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#InsectAllergy"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MusquitoAllergy"/>
     </owl:NamedIndividual>
     
 
@@ -2487,14 +3330,6 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BlurredVision">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Symptoms"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Bread -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Bread">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
     </owl:NamedIndividual>
     
 
@@ -2526,21 +3361,11 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Horse"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CatAllergy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CatAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalHairAllergies"/>
-        <untitled-ontology-8:cannotPet rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cat"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DogAllergy"/>
     </owl:NamedIndividual>
     
 
@@ -2549,6 +3374,8 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Cheese">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Lactose"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Melt"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw"/>
     </owl:NamedIndividual>
     
 
@@ -2653,6 +3480,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Diabetes">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Flew"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BlurredVision"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fatigue"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Hunger"/>
@@ -2701,20 +3529,10 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Horse"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DogAllergy -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DogAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalHairAllergies"/>
-        <untitled-ontology-8:cannotPet rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Dog"/>
     </owl:NamedIndividual>
     
 
@@ -2749,6 +3567,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#DustMitesAllergy">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AirborneAllergies"/>
+        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HayFever"/>
         <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SwollenEyes"/>
     </owl:NamedIndividual>
     
@@ -2767,15 +3586,6 @@ Morris Splint: 1050877</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Eagle">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Birds"/>
         <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Parrot"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#EatingDisorder -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#EatingDisorder">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disorder"/>
-        <untitled-ontology-8:comesWithSymptom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WeightLoss"/>
     </owl:NamedIndividual>
     
 
@@ -2958,14 +3768,6 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Horse -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Horse">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Hunger -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Hunger">
@@ -3079,6 +3881,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Milk">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Lactose"/>
+        <Ontology_Assignment:canBeCookedBy rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Raw"/>
     </owl:NamedIndividual>
     
 
@@ -3243,6 +4046,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reserved">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#CharacterTrait"/>
+        <Ontology_Assignment:impliesBehaviour rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#HatesTalking"/>
     </owl:NamedIndividual>
     
 
@@ -3323,15 +4127,6 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Snake -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Snake">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
-        <owl:differentFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Turtle"/>
-    </owl:NamedIndividual>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Sneezing -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Sneezing">
@@ -3377,14 +4172,6 @@ Morris Splint: 1050877</rdfs:comment>
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tomato">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables"/>
         <untitled-ontology-8:hasMicro rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VitaminC"/>
-    </owl:NamedIndividual>
-    
-
-
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Turtle -->
-
-    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Turtle">
-        <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
     </owl:NamedIndividual>
     
 
@@ -3497,9 +4284,27 @@ Morris Splint: 1050877</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Cat"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Dog"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Horse"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adoption"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Training"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VeterinaryVisit"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AirborneAllergies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AnimalAllergies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#FoodAllergies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MedicanAllergies"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinAllergies"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -3520,6 +4325,15 @@ Morris Splint: 1050877</rdfs:comment>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Restaurant"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Studio"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#University"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Birds"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fish"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Mammals"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Reptiles"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -3546,6 +4360,14 @@ Morris Splint: 1050877</rdfs:comment>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#KitchenTool"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#MedicalTool"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#OfficeTool"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disease"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Disorder"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#HealthCondition"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -3596,19 +4418,17 @@ Morris Splint: 1050877</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Fruits"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenFood"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Nuts"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Tofu"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Vegetables"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#JobEnd"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#JobStart"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Promotion"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#JobEnd"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#JobStart"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Promotion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Pain"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinSymptoms"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#StomacheSymptoms"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
@@ -3640,9 +4460,26 @@ Morris Splint: 1050877</rdfs:comment>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
         <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#AlmondAllergy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#PeanutAllergy"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#WalnutAllergy"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Almonds"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Peanuts"/>
             <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Walnuts"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#BreastCancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#ColonCancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#LungCancer"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#SkinCancer"/>
         </owl:distinctMembers>
     </rdf:Description>
     <rdf:Description>
