@@ -3185,6 +3185,19 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Lara -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Lara">
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasDiet"/>
+                <owl:allValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#VegetarianDish"/>
+            </owl:Restriction>
+        </rdf:type>
+    </owl:NamedIndividual>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople -->
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#LikesMeetingPeople">
@@ -3496,6 +3509,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Amira">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
+        <untitled-ontology-8:hasHealthCondition rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#GlutenAllergy"/>
         <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">32</untitled-ontology-8:hasAge>
     </owl:NamedIndividual>
     
