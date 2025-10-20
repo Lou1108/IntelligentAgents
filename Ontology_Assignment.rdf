@@ -1538,12 +1538,6 @@ Morris Splint: 1050877</rdfs:comment>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#worksAt"/>
-                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Farm"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
     </owl:Class>
     
 
