@@ -55,6 +55,12 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasAJobAt -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasAJobAt"/>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel">
@@ -533,10 +539,6 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Place"/>
-        <owl:propertyChainAxiom rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#worksAt"/>
-            <rdf:Description rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#locatedIn"/>
-        </owl:propertyChainAxiom>
     </owl:ObjectProperty>
     
 
@@ -665,6 +667,16 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hadBodyHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hadBodyHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIndividualCharacteristic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome">
@@ -714,6 +726,17 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasBuildingHeight -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasBuildingHeight">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasDate -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasDate">
@@ -741,18 +764,6 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
         <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHeight -->
-
-    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasHeight">
-        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIndividualCharacteristic"/>
-        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
     </owl:DatatypeProperty>
     
 
@@ -3174,7 +3185,7 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Quito"/>
         <untitled-ontology-8:builtInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1975</untitled-ontology-8:builtInYear>
-        <untitled-ontology-8:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41</untitled-ontology-8:hasHeight>
+        <untitled-ontology-8:hasBuildingHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">41</untitled-ontology-8:hasBuildingHeight>
     </owl:NamedIndividual>
     
 
@@ -3364,7 +3375,7 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Denver"/>
         <untitled-ontology-8:builtInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1941</untitled-ontology-8:builtInYear>
-        <untitled-ontology-8:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1970</untitled-ontology-8:hasHeight>
+        <untitled-ontology-8:hasBuildingHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1970</untitled-ontology-8:hasBuildingHeight>
     </owl:NamedIndividual>
     
 
@@ -3907,7 +3918,7 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Florance"/>
         <untitled-ontology-8:builtInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1296</untitled-ontology-8:builtInYear>
-        <untitled-ontology-8:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115</untitled-ontology-8:hasHeight>
+        <untitled-ontology-8:hasBuildingHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">115</untitled-ontology-8:hasBuildingHeight>
     </owl:NamedIndividual>
     
 
@@ -3944,7 +3955,7 @@ Morris Splint: 1050877</rdfs:comment>
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Landmark"/>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Paris"/>
         <untitled-ontology-8:builtInYear rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1887</untitled-ontology-8:builtInYear>
-        <untitled-ontology-8:hasHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">330</untitled-ontology-8:hasHeight>
+        <untitled-ontology-8:hasBuildingHeight rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">330</untitled-ontology-8:hasBuildingHeight>
     </owl:NamedIndividual>
     
 
@@ -4181,8 +4192,8 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Leo">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
+        <Ontology_Assignment:hasAJobAt rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
         <untitled-ontology-8:hasJob rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Waiter"/>
-        <untitled-ontology-8:worksAt rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
         <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</untitled-ontology-8:hasAge>
     </owl:NamedIndividual>
     
