@@ -3355,7 +3355,7 @@ Morris Splint: 1050877</rdfs:comment>
             </owl:Restriction>
         </rdf:type>
         <untitled-ontology-8:locatedIn rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Ecuador"/>
-        <Ontology_Assignment:carRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">234</Ontology_Assignment:carRatio>
+        <Ontology_Assignment:carRatio rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">511</Ontology_Assignment:carRatio>
         <untitled-ontology-8:hasPopulation rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2342000</untitled-ontology-8:hasPopulation>
     </owl:NamedIndividual>
     
