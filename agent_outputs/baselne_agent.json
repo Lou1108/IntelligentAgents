@@ -1,0 +1,16 @@
+[
+    {
+        "IE": 10,
+        "RE": 2,
+        "NE": 1,
+        "original_input": "Jack and his family are celebrating his birthday, Jack just turned 235 years old.",
+        "corrected_input": "Jack and his family are celebrating his birthday, Jack just turned 235 years old. "
+    },
+    {
+        "IE": 8,
+        "RE": 1,
+        "NE": 0,
+        "original_input": "Jack loves talking about himself and everything he has done in his life, many people would consider Jack a reserved person. This year, Jack’s family decided to visit the beautiful city of Quito, famous for its landmark La Virgen del Panecillo, which overlooks the city from a tall hill.",
+        "corrected_input": "Jack loves talking about himself and everything he has done in his life, many people would consider Jack a reserved person. This year, Jack’s family decided to visit the beautiful city of Quito, famous for its landmark La Virgen del Panecillo, which overlooks the city from a tall hill."
+    }
+]
