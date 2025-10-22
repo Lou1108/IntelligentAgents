@@ -55,12 +55,6 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
-    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasAJobAt -->
-
-    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasAJobAt"/>
-    
-
-
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel -->
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasNoiseLevel">
@@ -640,7 +634,7 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:ObjectProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#worksAt">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
-        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Occupation"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
         <rdfs:range rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Workplace"/>
     </owl:ObjectProperty>
     
@@ -4192,8 +4186,8 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Leo">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Adult"/>
-        <Ontology_Assignment:hasAJobAt rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
         <untitled-ontology-8:hasJob rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Waiter"/>
+        <untitled-ontology-8:worksAt rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Riccolo"/>
         <untitled-ontology-8:hasAge rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</untitled-ontology-8:hasAge>
     </owl:NamedIndividual>
     
