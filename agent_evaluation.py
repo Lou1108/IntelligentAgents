@@ -23,7 +23,7 @@ def compute_cosine_similarity(input_1: str, input_2: str) -> float:
     return float(util.cos_sim(emb_1, emb_2).item())
 
 
-def compute_metrics(IE, RE, NE, original_input, corrected_input):
+def compute_metrics(story_number, IE, RE, NE, original_input, corrected_input):
     CE = IE - RE  # corrected errors
     correction_rate = safe_division(CE, IE)
     error_addition_rate = safe_division(NE, (IE + NE))
@@ -36,6 +36,7 @@ def compute_metrics(IE, RE, NE, original_input, corrected_input):
                                                corrected_input) if original_input and corrected_input else float('nan')
 
     return {
+        "story number": story_number,
         "E (Initial Errors)": IE,
         "RE (Remaining Errors)": RE,
         "NE (New Errors)": NE,
@@ -50,10 +51,13 @@ def compute_metrics(IE, RE, NE, original_input, corrected_input):
 
 
 def get_average_metrics(inputs):
-    individual_metrics = [compute_metrics(**ex) for ex in inputs]
+    individual_metrics = [compute_metrics(**ex) for ex in inputs if ex != "story_number"]
     df = pd.DataFrame(individual_metrics)
 
-    return df.describe().loc[['mean', 'std']].T
+    # averages of each story for 10 runs
+    grouped = df.groupby('story number').mean(numeric_only=True)
+
+    return grouped, grouped.describe().loc[['mean', 'std']].T
 
 
 def load_agent_input_from_file(filepath):
@@ -67,8 +71,20 @@ if __name__ == "__main__":
 
     print("------------------------- Evaluate Ontology Agent -------------------------")
     ontology_agent_results = load_agent_input_from_file("agent_outputs/ontology_agent.json")
-    print(get_average_metrics(ontology_agent_results))
+    grouped_ontology, avg_ontology = get_average_metrics(ontology_agent_results)
 
     print("------------------------- Evaluate Baseline Agent -------------------------")
     baseline_agent_results = load_agent_input_from_file("agent_outputs/baselne_agent.json")
-    print(get_average_metrics(baseline_agent_results))
+    grouped_baseline, avg_baseline = get_average_metrics(baseline_agent_results)
+
+    print(grouped_baseline)
+    #
+    comp_models = pd.concat([grouped_ontology.T, grouped_baseline.T], axis=1, ignore_index=True)
+    print(comp_models)
+    comp_models.columns = ['Ontology (1)', 'Ontology (2)', 'Ontology (3)', 'Ontology (4)', 'Ontology (5)', 'Baseline (1)', 'Baseline (2)', 'Baseline (3)', 'Baseline (4)', 'Baseline (5)']
+    comp_models.to_csv("agent_outputs/model_comparison.csv")
+
+    # combined table for comparison
+    comp_avg = pd.concat([avg_ontology, avg_baseline], axis=1, ignore_index=True)
+    comp_avg.columns = ['Ontology Mean', 'Ontology Std', 'Baseline Mean', 'Baseline Std']
+    comp_avg.to_csv("agent_outputs/average_comparison.csv")
