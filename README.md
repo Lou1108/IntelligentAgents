@@ -6,7 +6,7 @@ This repository is used for a group project in the course Intelligent Agents at 
 
 ```
 project-root/
-├── agent_evaluation/            # Output fiels from agent evaluation
+├── agent_evaluation/            # Output files from agent evaluation
 ├── baseline_agent_output/       # Output files from Baseline agent
 ├── ontology_agent_output/       # Output files from ontology agent
 │
