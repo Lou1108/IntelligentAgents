@@ -70,11 +70,11 @@ if __name__ == "__main__":
     # potentially requires: pip install "numpy<2.0" --force-reinstall
 
     print("------------------------- Evaluate Ontology Agent -------------------------")
-    ontology_agent_results = load_agent_input_from_file("agent_outputs/ontology_agent.json")
+    ontology_agent_results = load_agent_input_from_file("agent_evaluation/ontology_agent.json")
     grouped_ontology, avg_ontology = get_average_metrics(ontology_agent_results)
 
     print("------------------------- Evaluate Baseline Agent -------------------------")
-    baseline_agent_results = load_agent_input_from_file("agent_outputs/baselne_agent.json")
+    baseline_agent_results = load_agent_input_from_file("agent_evaluation/baselne_agent.json")
     grouped_baseline, avg_baseline = get_average_metrics(baseline_agent_results)
 
     print(grouped_baseline)
@@ -82,9 +82,9 @@ if __name__ == "__main__":
     comp_models = pd.concat([grouped_ontology.T, grouped_baseline.T], axis=1, ignore_index=True)
     print(comp_models)
     comp_models.columns = ['Ontology (1)', 'Ontology (2)', 'Ontology (3)', 'Ontology (4)', 'Ontology (5)', 'Baseline (1)', 'Baseline (2)', 'Baseline (3)', 'Baseline (4)', 'Baseline (5)']
-    comp_models.to_csv("agent_outputs/model_comparison.csv")
+    comp_models.to_csv("agent_evaluation/model_comparison.csv")
 
     # combined table for comparison
     comp_avg = pd.concat([avg_ontology, avg_baseline], axis=1, ignore_index=True)
     comp_avg.columns = ['Ontology Mean', 'Ontology Std', 'Baseline Mean', 'Baseline Std']
-    comp_avg.to_csv("agent_outputs/average_comparison.csv")
+    comp_avg.to_csv("agent_evaluation/average_comparison.csv")
