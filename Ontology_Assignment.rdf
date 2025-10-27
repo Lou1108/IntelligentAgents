@@ -679,6 +679,16 @@ Morris Splint: 1050877</rdfs:comment>
     
 
 
+    <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasBirthday -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#hasBirthday">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#hasIndividualCharacteristic"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome -->
 
     <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#averageIncome">
@@ -1291,6 +1301,12 @@ Morris Splint: 1050877</rdfs:comment>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#canBeCookedBy"/>
                 <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#OvenBake"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#isSignatureFoodOf"/>
+                <owl:hasValue rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Italy"/>
             </owl:Restriction>
         </rdfs:subClassOf>
     </owl:Class>
@@ -4173,6 +4189,12 @@ Morris Splint: 1050877</rdfs:comment>
 
     <owl:NamedIndividual rdf:about="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Italy">
         <rdf:type rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#Country"/>
+        <rdf:type>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/untitled-ontology-8#famousForFood"/>
+                <owl:someValuesFrom rdf:resource="http://www.semanticweb.org/izabo/ontologies/2025/8/Ontology_Assignment#Pizza"/>
+            </owl:Restriction>
+        </rdf:type>
     </owl:NamedIndividual>
     
 
