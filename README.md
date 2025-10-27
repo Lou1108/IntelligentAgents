@@ -54,6 +54,11 @@ To generate the evaluation results, run the python script:
 python agent_evaluation.py
 ```
 
+The applied BERT model requires a numpy version of 2.0 or earlier. If any problems occur, run the following code to reinstall the correct version:
+```
+pip install "numpy<2.0" --force-reinstall
+```
+
 This evaluates the results and stores them as .csv in the agent_evaluation/ directory.
 
 
