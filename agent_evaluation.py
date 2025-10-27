@@ -88,7 +88,7 @@ if __name__ == "__main__":
     grouped_ontology, avg_ontology = get_average_metrics(ontology_agent_results)
 
     print("------------------------- Evaluate Baseline Agent -------------------------")
-    baseline_agent_results = load_agent_input_from_file("agent_evaluation/baselne_agent.json")
+    baseline_agent_results = load_agent_input_from_file("agent_evaluation/baseline_agent.json")
     grouped_baseline, avg_baseline = get_average_metrics(baseline_agent_results)
 
     print("------------------------- Generate Average Model Metrics -------------------------")
