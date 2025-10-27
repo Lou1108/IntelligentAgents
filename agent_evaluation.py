@@ -12,8 +12,6 @@ def safe_division(num, denom):
 def compute_cosine_similarity(input_1: str, input_2: str) -> float:
     """
     computes the cosine similarity between two inputs using the BERT model
-    :param input_1:
-    :param input_2:
     :return: float in [0, 1]; 1 == identical meaning
     """
 
@@ -24,6 +22,16 @@ def compute_cosine_similarity(input_1: str, input_2: str) -> float:
 
 
 def compute_metrics(story_number, IE, RE, NE, original_input, corrected_input):
+    """
+    computes a variety of metrics of a specific LLM correction
+    :param story_number:
+    :param IE: number of initial errors
+    :param RE: number or remaining errors
+    :param NE: numbre of new errors
+    :param original_input: the original text input
+    :param corrected_input: the LLM corrected story input
+    :return: a dictionary of computed metrics
+    """
     CE = IE - RE  # corrected errors
     correction_rate = safe_division(CE, IE)
     error_addition_rate = safe_division(NE, (IE + NE))
@@ -51,6 +59,9 @@ def compute_metrics(story_number, IE, RE, NE, original_input, corrected_input):
 
 
 def get_average_metrics(inputs):
+    """
+    retrieves the grouped and average metric results
+    """
     individual_metrics = [compute_metrics(**ex) for ex in inputs if ex != "story_number"]
     df = pd.DataFrame(individual_metrics)
 
@@ -61,6 +72,9 @@ def get_average_metrics(inputs):
 
 
 def load_agent_input_from_file(filepath):
+    """
+    loads agent inputs from json file
+    """
     with open(filepath, "r", encoding="utf-8") as f:
         stories = json.load(f)
     return stories
@@ -77,14 +91,15 @@ if __name__ == "__main__":
     baseline_agent_results = load_agent_input_from_file("agent_evaluation/baselne_agent.json")
     grouped_baseline, avg_baseline = get_average_metrics(baseline_agent_results)
 
-    print(grouped_baseline)
-    #
+    print("------------------------- Generate Average Model Metrics -------------------------")
     comp_models = pd.concat([grouped_ontology.T, grouped_baseline.T], axis=1, ignore_index=True)
-    print(comp_models)
     comp_models.columns = ['Ontology (1)', 'Ontology (2)', 'Ontology (3)', 'Ontology (4)', 'Ontology (5)', 'Baseline (1)', 'Baseline (2)', 'Baseline (3)', 'Baseline (4)', 'Baseline (5)']
     comp_models.to_csv("agent_evaluation/model_comparison.csv")
+    print(comp_models.to_string())
 
     # combined table for comparison
+    print("------------------------- Generate Overall Model comparison -------------------------")
     comp_avg = pd.concat([avg_ontology, avg_baseline], axis=1, ignore_index=True)
     comp_avg.columns = ['Ontology Mean', 'Ontology Std', 'Baseline Mean', 'Baseline Std']
     comp_avg.to_csv("agent_evaluation/average_comparison.csv")
+    print(comp_avg.to_string())
